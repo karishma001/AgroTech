@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Farm Monitoring Dashboard</h1>
+    </header>
+    <main>
+        <div class="card" id="temperature-card"> <br>
+            <h2>Temperature</h2>
+            <div class="message-cloud"><img src="c:\Users\admin\Downloads\temp.jpg" alt="temp" style="height: 100px; width: 100px;"></div> <!-- Message cloud -->
+            <img src="c:\Users\admin\Downloads\1487511.png" alt="Temperature Icon" class="icon">
+            <br><br><br> 
+            <p id="temperature">25°C</p>
+        </div>
+        
+        <div class="card" id="humidity-card"> <br>
+            <h2>Humidity</h2>
+            <div class="message-cloud"><img src="c:\Users\admin\Downloads\temperature-sensor.jpg" alt="hum" style="height: 100px; width: 100px;"></div> <!-- Message cloud -->
+            <img src="c:\Users\admin\Downloads\3262966.png" alt="Humidity icon" class="icon"><br> <br> <br>
+            <p id="humidity">60%</p>
+        </div>
+        <div class="card" id="Ldr-card"> <br>
+            <h2>Light Intensity</h2>
+            <img src="c:\Users\admin\Downloads\2779262.png" alt="Light icon" class="icon"> <br> <br> <br>
+            <p id="light-intensity">800 lux</p>
+        </div>
+        <div class="card" id="gas-card"> <br>
+            <h2>Gas</h2>
+            <div class="message-cloud"><img src="c:\Users\admin\Downloads\mq-2-lpg-gas-sensor-module.jpg" alt="gas" style="height: 100px; width: 100px;"></div> <!-- Message cloud -->
+            <img src="c:\Users\admin\Downloads\gas_4062.png" alt="gas icon" class="icon"> <br> <br> <br>
+            <p id="air-quality">Good</p>
+        </div>
+        <div class="card" id="crp-card"> <br>
+            <h2>Crop Recommendation</h2>
+            <img src="c:\Users\admin\Downloads\14209387.png" alt="crop icon" class="icon"> <br> <br> <br>
+            <p id="crop-production">Wheat,corn</p>
+        </div>
+        <div class="card" id="npk-card"> <br>
+            <h2>NPK Values</h2>
+            <img src="c:\Users\admin\Downloads\npk.png" alt="npk icon" class="icon"> <br> <br> <br>
+            <p id="npk-values">N: 100, P: 50, K: 40</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farm Monitoring System</p>
+    </footer>
+    <script>
+        document.getElementById('temperature-card').addEventListener('click', function() {
+            window.location.href = 'temperature.html';
+        });
+        document.getElementById('humidity-card').addEventListener('click', function() {
+            window.location.href = 'humidity.html';
+        });
+        document.getElementById('Ldr-card').addEventListener('click', function() {
+            window.location.href = 'ldr.html';
+        });
+        document.getElementById('gas-card').addEventListener('click', function() {
+            window.location.href = 'gas.html';
+        });
+        document.getElementById('crp-card').addEventListener('click', function() {
+            window.location.href = 'crp.html';
+        });
+        document.getElementById('npk-card').addEventListener('click', function() {
+            window.location.href = 'npk.html';
+        });
+    </script>
+</body>
+</html>
